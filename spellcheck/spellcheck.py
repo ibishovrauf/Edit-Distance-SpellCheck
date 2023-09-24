@@ -55,7 +55,7 @@ def main():
     parser = argparse.ArgumentParser(description="SpellCheck tool")
 
     algoritm = [0, 0, 0]
-    parser.add_argument("input_word", help="Input word to spellcheck")
+    parser.add_argument("--input", help="Input word to spellcheck")
     parser.add_argument(
         "--algorithm",
         choices=["optimized", "weighted", "normal"],
@@ -78,9 +78,9 @@ def main():
     with open('data/test_data.json', 'r') as file:
         calc_data = json.load(file)
 
-    result = spell_checker(args.input_word, calc_data, optimazed=algoritm[0], weighted=algoritm[1])
+    result = spell_checker(args.input, calc_data, optimazed=algoritm[0], weighted=algoritm[1])
 
-    print(f"\nCorrected form of word '{args.input_word}': {result['to']} with probability: {result['probability']}\n")
+    print(f"\nCorrected form of word '{args.input}': {result['to']} with probability: {result['probability']}\n")
 
 
 if __name__ == "__main__":

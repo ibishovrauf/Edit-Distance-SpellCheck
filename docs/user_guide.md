@@ -22,7 +22,7 @@ To get started with SpellCheck, follow these steps:
 To use SpellCheck, you can run it from the command line as follows:
 
 ```bash
-python spellcheck.py --input <input> --algorithm [optimized, weighted, normal] --weights
+python spellcheck.py <input> --algorithm [optimized, weighted, normal] --weights
 ```
 
 `--input`: Specify the path to your input text file.
