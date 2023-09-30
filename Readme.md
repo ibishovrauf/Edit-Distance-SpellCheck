@@ -33,8 +33,10 @@ To get started with the project, follow these steps:
 3. Install the required dependencies: `pip install -r requirements.txt`
 
 ## Usage
-
+checj
 To use SpellCheck, you can run it from the command line as follows:
+
+
 
 ```bash
 python spellcheck.py <input> --algorithm [optimized, weighted, normal] --weights

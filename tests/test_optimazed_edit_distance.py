@@ -30,7 +30,7 @@ class TestEditDistance(unittest.TestCase):
 
     def test_substitution(self):
         # Test substitution of a character
-        self.assertEqual(optimazed_edit_distance("kitten", "sitting"), 3)
+        self.assertEqual(optimazed_edit_distance("kitten", "sitt    ing"), 3)
 
 if __name__ == "__main__":
     unittest.main()
